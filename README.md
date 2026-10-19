@@ -16,6 +16,7 @@ transaction. The app therefore accepts CSV records with columns `Time, V1..V28, 
 An optional `Class` column is ignored for prediction (used only to show actual labels in the demo).
 
 ## Model
+Dataset: Credit Card Fraud Detection (Kaggle, ULB Machine Learning Group): https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 | Item | Value |
 |---|---|
 | Model | XGBoost (200 trees, depth 5, learning rate 0.05) |
@@ -25,7 +26,7 @@ An optional `Class` column is ignored for prediction (used only to show actual l
 
 ## Setup (Windows)
 Put these files in one folder, together with the saved files from the notebook:
-`fraud_model.joblib`, `scaler.joblib`, `config.json`, `sample_transactions.csv`.
+`fraud_model.json`, `scaler_fresh.joblib`, `config.json`, `sample_transactions.csv`.
 
 ```
 python -m venv venv
